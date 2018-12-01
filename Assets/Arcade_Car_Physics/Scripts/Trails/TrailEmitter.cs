@@ -4,7 +4,6 @@
  * This is distributed under the MIT Licence (see LICENSE.md for details)
  */
 using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace VehicleBehaviour.Trails

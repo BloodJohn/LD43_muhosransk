@@ -3,6 +3,9 @@ using VehicleBehaviour;
 
 public class CheckPoint : MonoBehaviour
 {
+    public string StartMission = "New Mission";
+    public string CompleteMission = "Complete Mission";
+
     private WheelVehicle _playerCar;
     private bool _isCheck;
     private const float _radius2Check = 2f*2f;
@@ -11,7 +14,12 @@ public class CheckPoint : MonoBehaviour
     {
         _playerCar = FindObjectOfType<WheelVehicle>();
     }
-    
+
+    private void Start()
+    {
+        MissionUI.Instance.SendMessage(StartMission);
+    }
+
     void Update()
     {
         if (_isCheck) return;
@@ -20,8 +28,9 @@ public class CheckPoint : MonoBehaviour
 
         if (dist2 <= _radius2Check)
         {
-            Debug.Log($"Check {gameObject.name}");
+            MissionUI.Instance.SendMessage(CompleteMission);
             _isCheck = true;
+            gameObject.SetActive(false);
         }
     }
 }
