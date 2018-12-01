@@ -12,6 +12,7 @@ ModelImporter:
     100012: Kar
     100014: //RootNode
     100016: Lamp
+    100018: pCylinder5
     400000: Camera
     400002: Cube
     400004: Cylinder_000
@@ -21,23 +22,28 @@ ModelImporter:
     400012: Kar
     400014: //RootNode
     400016: Lamp
+    400018: pCylinder5
     2000000: Camera
     2100000: No_Name
+    2100002: lambert1
     2300000: Cube
     2300002: Cylinder_000
     2300004: Cylinder_001
     2300006: Cylinder_002
     2300008: Cylinder_003
+    2300010: pCylinder5
     3300000: Cube
     3300002: Cylinder_000
     3300004: Cylinder_001
     3300006: Cylinder_002
     3300008: Cylinder_003
+    3300010: pCylinder5
     4300000: Cube
     4300002: Cylinder_003
     4300004: Cylinder_002
     4300006: Cylinder_001
     4300008: Cylinder_000
+    4300010: pCylinder5
     10800000: Lamp
   externalObjects: {}
   materials:
