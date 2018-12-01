@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 67c19608083624fca91e4b6da4f20740
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     100002: block_default_4
@@ -33,6 +33,17 @@ ModelImporter:
     2100006: light
     2100008: orangeSteel
     2100010: glass
+    2100012: block_default_4Mat
+    2100014: detail_antenna_7Mat
+    2100016: detail_bullbar_11Mat
+    2100018: detail_exhaustVertical_8Mat
+    2100020: detail_exhaustVertical_9Mat
+    2100022: detail_fender_23Mat
+    2100024: detail_fender_24Mat
+    2100026: hood_sport_10Mat
+    2100028: trunk_station_3Mat
+    2100030: trunk_truck_0Mat
+    2100032: trunk_truck_6Mat
     2300000: block_default_4
     2300002: detail_antenna_7
     2300004: detail_bullbar_11
@@ -114,6 +125,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -131,11 +143,16 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -150,7 +167,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

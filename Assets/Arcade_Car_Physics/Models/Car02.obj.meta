@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 2bdb67dd109374a0cb46d1c3f285d23d
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     100002: cylinder_hollow_63
@@ -34,6 +34,17 @@ ModelImporter:
     2100008: light
     2100010: orangeSteel
     2100012: glass
+    2100014: cylinder_hollow_63Mat
+    2100016: cylinder_hollow_64Mat
+    2100018: detail_engine_61Mat
+    2100020: detail_fenderRounded_57Mat
+    2100022: detail_fenderRounded_58Mat
+    2100024: detail_fenderRounded_59Mat
+    2100026: detail_fenderRounded_60Mat
+    2100028: detail_spoilerSmall_55Mat
+    2100030: hood_sport_52Mat
+    2100032: trunk_default_51Mat
+    2100034: windshield_default_53Mat
     2300000: cylinder_hollow_63
     2300002: cylinder_hollow_64
     2300004: detail_engine_61
@@ -115,6 +126,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -132,11 +144,16 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -151,7 +168,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

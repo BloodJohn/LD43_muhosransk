@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 2c9905fc8f65a4003856f80c2d000216
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     100002: detail_bullbar_37
@@ -46,6 +46,22 @@ ModelImporter:
     2100012: orangeSteel
     2100014: glass
     2100016: wood
+    2100018: detail_bullbar_37Mat
+    2100020: detail_engine_49Mat
+    2100022: detail_exhaustVertical_35Mat
+    2100024: detail_exhaustVertical_36Mat
+    2100026: detail_fenderRounded_51Mat
+    2100028: detail_fenderRounded_52Mat
+    2100030: detail_fenderSquare_31Mat
+    2100032: detail_fenderSquare_32Mat
+    2100034: detail_fenderSquare_33Mat
+    2100036: detail_fenderSquare_34Mat
+    2100038: engine_intakeArrow_48Mat
+    2100040: hood_truck_24Mat
+    2100042: trunk_station_22Mat
+    2100044: wall_paperFrame_46Mat
+    2100046: wall_paperFrame_47Mat
+    2100048: windshield_square_23Mat
     2300000: detail_bullbar_37
     2300002: detail_engine_49
     2300004: detail_exhaustVertical_35
@@ -147,6 +163,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -164,11 +181,16 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -183,7 +205,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
