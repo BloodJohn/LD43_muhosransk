@@ -16,8 +16,8 @@ public class CheckPoint : MonoBehaviour
 
 
     private const float _radius2Check = 2f*2f;
-    private const float _alertDelay = 5f;
-    private const float _failDelay = 15f;
+    private const float _alertDelay = 15f;
+    private const float _failDelay = 45f;
 
     void Awake()
     {
