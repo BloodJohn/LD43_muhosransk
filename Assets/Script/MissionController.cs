@@ -8,6 +8,7 @@ public class MissionController : MonoBehaviour
     public static MissionController Instance;
     private CheckPoint[] _missionList;
     private float _startCountDown;
+    private int _lastMissionIndex = -1;
 
     public CheckPoint CurrentMission => _missionList.FirstOrDefault(item => item.gameObject.activeSelf);
 
@@ -33,8 +34,13 @@ public class MissionController : MonoBehaviour
             if (_startCountDown < 0f)
             {
                 var index = Random.Range(0, _missionList.Length);
-                _missionList[index].StartMission();
-                _startCountDown = 5f;
+
+                if (index != _lastMissionIndex)
+                {
+                    _lastMissionIndex = index;
+                    _missionList[index].StartMission();
+                    _startCountDown = 10f;
+                }
             }
         }
 
