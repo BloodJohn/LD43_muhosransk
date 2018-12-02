@@ -3,10 +3,21 @@ using VehicleBehaviour;
 
 public class CheckPoint : MonoBehaviour
 {
+    /*
+     */
+
+
+    /// <summary>Иконка персонажа</summary>
     public Sprite CharacterIcon;
+    /// <summary></summary>
     public string StartMessage = "New Mission";
+    /// <summary></summary>
+    public string FastCompleteMessage = "Complete Mission";
+    /// <summary></summary>
     public string AlertMessage = "Please Help";
+    /// <summary></summary>
     public string CompleteMessage = "Complete Mission";
+    /// <summary></summary>
     public string FailMessage = "Mission Failed";
 
     private WheelVehicle _playerCar;
@@ -38,7 +49,7 @@ public class CheckPoint : MonoBehaviour
         MissionUI.Instance.SetCharacter(CharacterIcon);
     }
 
-    public void CheckComplete()
+    public void UpdateMission()
     {
         if (!gameObject.activeSelf) return;
         if (_isFail) return;
@@ -49,7 +60,11 @@ public class CheckPoint : MonoBehaviour
         {
             _isComplete = true;
             gameObject.SetActive(false);
-            MissionUI.Instance.SendMessage(CompleteMessage);
+
+            if (!_isAlert)
+                MissionUI.Instance.SendMessage(FastCompleteMessage);
+            else 
+                MissionUI.Instance.SendMessage(CompleteMessage);
             return;
         }
 

@@ -7,6 +7,7 @@ public class MissionController : MonoBehaviour
 {
     public static MissionController Instance;
     private CheckPoint[] _missionList;
+    private float _startCountDown;
 
     public CheckPoint CurrentMission => _missionList.FirstOrDefault(item => item.gameObject.activeSelf);
 
@@ -27,17 +28,19 @@ public class MissionController : MonoBehaviour
     {
         if (CurrentMission == null)
         {
-            var index = Random.Range(0, _missionList.Length);
+            _startCountDown -= Time.deltaTime;
 
-            _missionList[index].StartMission();
+            if (_startCountDown < 0f)
+            {
+                var index = Random.Range(0, _missionList.Length);
+                _missionList[index].StartMission();
+                _startCountDown = 5f;
+            }
         }
-
 
         foreach (var checkPoint in _missionList)
-        {
-            checkPoint.CheckComplete();
-        }
+            checkPoint.UpdateMission();
     }
 
-    
+
 }
