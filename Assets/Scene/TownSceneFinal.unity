@@ -1685,6 +1685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3b22a353f054d3418985834e2812b40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ArrowSpriteList: []
 --- !u!114 &432931553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2768,7 +2769,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.25307047, g: 0.31710532, b: 0.4433962, a: 1}
+  m_Color: {r: 0.4521182, g: 0.62793094, b: 0.754717, a: 1}
   m_Intensity: 0.4
   m_Range: 10
   m_SpotAngle: 30
@@ -3315,6 +3316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MessageText: {fileID: 634234630}
+  CharacterIcon: {fileID: 0}
 --- !u!114 &933188587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9435,7 +9437,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363859760}
-  m_LocalRotation: {x: 0.07378838, y: -0.009378096, z: 0.00056274346, w: 0.9972297}
+  m_LocalRotation: {x: 0.07376899, y: -0.025901437, z: 0.0017853826, w: 0.9969374}
   m_LocalPosition: {x: 42.3, y: 6.558025, z: -71.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10977,7 +10979,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 40
+  field of view: 81.7
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -11002,8 +11004,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107185291}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.07376899, y: -0.025901437, z: 0.0017853826, w: 0.9969374}
+  m_LocalPosition: {x: 42.3, y: 6.558025, z: -71.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
