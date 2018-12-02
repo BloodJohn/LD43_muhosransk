@@ -7,7 +7,7 @@ public class CheckPoint : MonoBehaviour
     public string CompleteMission = "Complete Mission";
 
     private WheelVehicle _playerCar;
-    private bool _isCheck;
+    public bool IsComplete;
     private const float _radius2Check = 2f*2f;
 
     void Awake()
@@ -20,16 +20,16 @@ public class CheckPoint : MonoBehaviour
         MissionUI.Instance.SendMessage(StartMission);
     }
 
-    void Update()
+    public void CheckComplete()
     {
-        if (_isCheck) return;
+        if (IsComplete) return;
 
         var dist2 = (transform.position - _playerCar.transform.position).sqrMagnitude;
 
         if (dist2 <= _radius2Check)
         {
             MissionUI.Instance.SendMessage(CompleteMission);
-            _isCheck = true;
+            IsComplete = true;
             gameObject.SetActive(false);
         }
     }

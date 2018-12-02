@@ -10,6 +10,7 @@ public class MissionIcon : MonoBehaviour
     private static readonly Vector2 _centerPos = new Vector2(0.5f, 0.5f);
     private static readonly Vector2 _leftPos = new Vector2(0, 0.5f);
     private static readonly Vector2 _rigthPos = new Vector2(1, 0.5f);
+    private static readonly Vector2 _backPos = new Vector2(0.5f, 0f);
 
     private void Awake()
     {
@@ -28,31 +29,26 @@ public class MissionIcon : MonoBehaviour
         }
 
         var screenPoint = _cameraView.WorldToViewportPoint(_mission.transform.position);
-        var onScreen = screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
-
-        if (onScreen)
+        if (screenPoint.z > 0 && screenPoint.x > 0 && screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1)
         {
-            _image.rectTransform.anchorMax = _centerPos;
-            _image.rectTransform.anchorMin = _centerPos;
-            _image.rectTransform.pivot = _centerPos;
             _image.color = Color.clear;
+            return;
         }
-        else
-        {
-            _image.color = Color.white;
-            if (screenPoint.x <= 0)
-            {
 
-                _image.rectTransform.anchorMax = _leftPos;
-                _image.rectTransform.anchorMin = _leftPos;
-                _image.rectTransform.pivot = _leftPos;
-            }
-            if (screenPoint.x >= 1)
-            {
-                _image.rectTransform.anchorMax = _rigthPos;
-                _image.rectTransform.anchorMin = _rigthPos;
-                _image.rectTransform.pivot = _rigthPos;
-            }
+        var newPos = _backPos;
+        if (screenPoint.x <= 0)
+        {
+            newPos = _leftPos;
         }
+        else if (screenPoint.x >= 1)
+        {
+            newPos = _rigthPos;
+        }
+
+        _image.rectTransform.anchorMax = newPos;
+        _image.rectTransform.anchorMin = newPos;
+        _image.rectTransform.pivot = newPos;
+
+        _image.color = Color.white;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using UnityEngine;
 
 public class MissionController : MonoBehaviour
@@ -12,5 +13,13 @@ public class MissionController : MonoBehaviour
         _missionList = FindObjectsOfType<CheckPoint>();
     }
 
-    public CheckPoint CurrentMission => _missionList.FirstOrDefault(item => item.gameObject.activeSelf);
+    private void Update()
+    {
+        foreach (var checkPoint in _missionList)
+        {
+            checkPoint.CheckComplete();
+        }
+    }
+
+    public CheckPoint CurrentMission => _missionList.FirstOrDefault(item => !item.IsComplete);
 }
