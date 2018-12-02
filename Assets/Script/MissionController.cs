@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using VehicleBehaviour;
 using Random = UnityEngine.Random;
 
@@ -8,9 +9,11 @@ public class MissionController : MonoBehaviour
 {
     public const string SceneName = "TownScene";
     public static MissionController Instance;
-    
+    private const float _failDelay = 45f;
+
     private CheckPoint[] _missionList;
     private float _startCountDown;
+    private float _levelTime;
     private int _lastMissionIndex = -1;
 
     [HideInInspector]
@@ -33,6 +36,13 @@ public class MissionController : MonoBehaviour
 
     private void Update()
     {
+        _levelTime += Time.deltaTime;
+
+        if (_levelTime > _missionList.Length * _failDelay)
+        {
+            SceneManager.LoadScene(WinController.SceneName);
+        }
+
         if (CurrentMission == null)
         {
             _startCountDown -= Time.deltaTime;

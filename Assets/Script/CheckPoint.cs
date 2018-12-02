@@ -2,10 +2,6 @@
 
 public class CheckPoint : MonoBehaviour
 {
-    /*
-     */
-
-
     /// <summary>Иконка персонажа</summary>
     public Sprite CharacterIcon;
     public Sprite AlertIcon;
