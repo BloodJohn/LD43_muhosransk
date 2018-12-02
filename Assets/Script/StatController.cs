@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StatController : MonoBehaviour
@@ -48,6 +47,11 @@ public class StatController : MonoBehaviour
         _failCount++;
         StopTime();
         ShowStats();
+
+        if (_failCount >= 3)
+        {
+            SceneManager.LoadScene(FailController.SceneName);
+        }
     }
 
     private void ShowStats()

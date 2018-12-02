@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using VehicleBehaviour;
 
 public class CheckPoint : MonoBehaviour
 {
@@ -29,8 +28,7 @@ public class CheckPoint : MonoBehaviour
     private bool _isFail;
     private bool _isComplete;
     private float _time;
-
-
+    
     private const float _radius2Check = 2f*2f;
     private const float _alertDelay = 15f;
     private const float _failDelay = 45f;

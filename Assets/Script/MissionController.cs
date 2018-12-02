@@ -6,6 +6,7 @@ using Random = UnityEngine.Random;
 
 public class MissionController : MonoBehaviour
 {
+    public const string SceneName = "TownScene";
     public static MissionController Instance;
     
     private CheckPoint[] _missionList;
