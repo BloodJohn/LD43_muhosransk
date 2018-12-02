@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using UnityEngine;
+using VehicleBehaviour;
 using Random = UnityEngine.Random;
 
 public class MissionController : MonoBehaviour
@@ -10,12 +11,14 @@ public class MissionController : MonoBehaviour
     private float _startCountDown;
     private int _lastMissionIndex = -1;
 
+    public WheelVehicle PlayerCar;
     public CheckPoint CurrentMission => _missionList.FirstOrDefault(item => item.gameObject.activeSelf);
 
     void Awake()
     {
         Instance = this;
         _missionList = FindObjectsOfType<CheckPoint>();
+        PlayerCar = FindObjectOfType<WheelVehicle>();
 
         foreach (var checkPoint in _missionList)
         {

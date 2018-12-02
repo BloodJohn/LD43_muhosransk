@@ -20,7 +20,6 @@ public class CheckPoint : MonoBehaviour
     /// <summary></summary>
     public string FailMessage = "Mission Failed";
 
-    private WheelVehicle _playerCar;
     private bool _isAlert;
     private bool _isFail;
     private bool _isComplete;
@@ -30,11 +29,6 @@ public class CheckPoint : MonoBehaviour
     private const float _radius2Check = 2f*2f;
     private const float _alertDelay = 15f;
     private const float _failDelay = 45f;
-
-    void Awake()
-    {
-        _playerCar = FindObjectOfType<WheelVehicle>();
-    }
 
     public void StartMission()
     {
@@ -88,7 +82,7 @@ public class CheckPoint : MonoBehaviour
     {
         get
         {
-            var dist2 = (transform.position - _playerCar.transform.position).sqrMagnitude;
+            var dist2 = (transform.position - MissionController.Instance.PlayerCar.transform.position).sqrMagnitude;
 
             return (dist2 <= _radius2Check);
         }
