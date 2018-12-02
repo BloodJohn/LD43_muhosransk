@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 public class MissionController : MonoBehaviour
 {
-    public const string SceneName = "TownScene";
+    public const string SceneName = "TownSceneFinal";//"TownScene";
     public static MissionController Instance;
     private const float _failDelay = 45f;
 
