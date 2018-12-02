@@ -3,6 +3,7 @@ using VehicleBehaviour;
 
 public class CheckPoint : MonoBehaviour
 {
+    public Sprite CharacterIcon;
     public string StartMessage = "New Mission";
     public string AlertMessage = "Please Help";
     public string CompleteMessage = "Complete Mission";
@@ -34,6 +35,7 @@ public class CheckPoint : MonoBehaviour
         _time = 0f;
         gameObject.SetActive(true);
         MissionUI.Instance.SendMessage(StartMessage);
+        MissionUI.Instance.SetCharacter(CharacterIcon);
     }
 
     public void CheckComplete()

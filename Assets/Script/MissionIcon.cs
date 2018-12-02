@@ -6,6 +6,7 @@ public class MissionIcon : MonoBehaviour
     //public CheckPoint Check;
     private Camera _cameraView;
     private Image _image;
+    public Sprite[] ArrowSpriteList;
 
     private static readonly Vector2 _centerPos = new Vector2(0.5f, 0.5f);
     private static readonly Vector2 _leftPos = new Vector2(0, 0.5f);
@@ -36,13 +37,17 @@ public class MissionIcon : MonoBehaviour
         }
 
         var newPos = _backPos;
+        _image.sprite = ArrowSpriteList[1];
+
         if (screenPoint.x <= 0)
         {
             newPos = _leftPos;
+            _image.sprite = ArrowSpriteList[0];
         }
         else if (screenPoint.x >= 1)
         {
             newPos = _rigthPos;
+            _image.sprite = ArrowSpriteList[2];
         }
 
         _image.rectTransform.anchorMax = newPos;
