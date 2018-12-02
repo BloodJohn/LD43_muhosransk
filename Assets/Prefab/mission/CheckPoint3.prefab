@@ -1,69 +1,17 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &63922032825615304
+--- !u!1 &8650409394708890749
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8360644446549056839, guid: 454cfd7e97a70a347bd288f527a4c057,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 63922032825615305}
-  - component: {fileID: 63922032825615158}
-  m_Layer: 0
-  m_Name: CheckPoint3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &63922032825615305
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 63922032825615304}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84.3, y: 2.251, z: -86.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 63922034003800596}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &63922032825615158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 63922032825615304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1de7614b18fa11b42902da4c9e721e04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CharacterIcon: {fileID: 21300000, guid: a21f5fab75ef7b74caa0c8c3225ccb93, type: 3}
-  StartMessage: I need help, my husband is going to kill me!
-  FastCompleteMessage: A domestic over misplaced fishing rods. The husband looks unhinged
-    and tried to attack me, arrested.
-  AlertMessage: I hear screams, curses and loud noises from my neighbors!
-  CompleteMessage: A domestic over misplaced fishing rods. Rods found, the man looks
-    sheepish.
-  FailMessage: A man with an axe arrested for trying to break into the bathroom where
-    his wife hid.
---- !u!1 &63922034003800599
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 63922034003800596}
-  - component: {fileID: 63922034003800594}
-  - component: {fileID: 63922034003800597}
+  - component: {fileID: 8650409394708890746}
+  - component: {fileID: 8650409394708890744}
+  - component: {fileID: 8650409394708890747}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -71,35 +19,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &63922034003800596
+--- !u!4 &8650409394708890746
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8360644446549056836, guid: 454cfd7e97a70a347bd288f527a4c057,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 63922034003800599}
+  m_GameObject: {fileID: 8650409394708890749}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 63922032825615305}
+  m_Father: {fileID: 8650409395442872905}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &63922034003800594
+--- !u!33 &8650409394708890744
 MeshFilter:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8360644446549056834, guid: 454cfd7e97a70a347bd288f527a4c057,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 63922034003800599}
+  m_GameObject: {fileID: 8650409394708890749}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &63922034003800597
+--- !u!23 &8650409394708890747
 MeshRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8360644446549056837, guid: 454cfd7e97a70a347bd288f527a4c057,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 63922034003800599}
+  m_GameObject: {fileID: 8650409394708890749}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -130,3 +81,63 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &8650409395650820865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 8360644445042879640, guid: 454cfd7e97a70a347bd288f527a4c057,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8650409395442872905}
+  - component: {fileID: 8650409395650820878}
+  m_Layer: 0
+  m_Name: CheckPoint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8650409395442872905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 8360644445042879641, guid: 454cfd7e97a70a347bd288f527a4c057,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650409395650820865}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 84.3, y: 2.251, z: -86.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8650409394708890746}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8650409395650820878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 8360644445042879590, guid: 454cfd7e97a70a347bd288f527a4c057,
+    type: 3}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8650409395650820865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1de7614b18fa11b42902da4c9e721e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterIcon: {fileID: 21300000, guid: a21f5fab75ef7b74caa0c8c3225ccb93, type: 3}
+  AlertIcon: {fileID: 21300000, guid: 15d4d2d07b9efaf41bcdc3ca1db0dd1e, type: 3}
+  FastCompleteIcon: {fileID: 21300000, guid: 428f04e95b02537488277f67f2013b82, type: 3}
+  CompleteIcon: {fileID: 21300000, guid: 428f04e95b02537488277f67f2013b82, type: 3}
+  FailIcon: {fileID: 21300000, guid: 85e0e396c7fb3474790037bf6c19850c, type: 3}
+  StartMessage: I need help, my husband is going to kill me!
+  FastCompleteMessage: A domestic over misplaced fishing rods. The husband looks unhinged
+    and tried to attack me, arrested.
+  AlertMessage: I hear screams, curses and loud noises from my neighbors!
+  CompleteMessage: A domestic over misplaced fishing rods. Rods found, the man looks
+    sheepish.
+  FailMessage: A man with an axe arrested for trying to break into the bathroom where
+    his wife hid.

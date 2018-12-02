@@ -7,10 +7,12 @@ using Random = UnityEngine.Random;
 public class MissionController : MonoBehaviour
 {
     public static MissionController Instance;
+    
     private CheckPoint[] _missionList;
     private float _startCountDown;
     private int _lastMissionIndex = -1;
 
+    [HideInInspector]
     public WheelVehicle PlayerCar;
     public CheckPoint CurrentMission => _missionList.FirstOrDefault(item => item.gameObject.activeSelf);
 

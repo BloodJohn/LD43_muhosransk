@@ -9,6 +9,11 @@ public class CheckPoint : MonoBehaviour
 
     /// <summary>Иконка персонажа</summary>
     public Sprite CharacterIcon;
+    public Sprite AlertIcon;
+    public Sprite FastCompleteIcon;
+    public Sprite CompleteIcon;
+    public Sprite FailIcon;
+
     /// <summary></summary>
     public string StartMessage = "New Mission";
     /// <summary></summary>
@@ -49,16 +54,16 @@ public class CheckPoint : MonoBehaviour
         if (_isFail) return;
         if (_isComplete) return;
         _time += Time.deltaTime;
+        StatController.Instance.UpdateTime(_time);
 
         if (IsNearPoint)
         {
             _isComplete = true;
             gameObject.SetActive(false);
 
-            if (!_isAlert)
-                MissionUI.Instance.SendMessage(FastCompleteMessage);
-            else 
-                MissionUI.Instance.SendMessage(CompleteMessage);
+            MissionUI.Instance.SendMessage(_isAlert ? CompleteMessage : FastCompleteMessage);
+            MissionUI.Instance.SetCharacter(_isAlert ? CompleteIcon : FastCompleteIcon);
+            StatController.Instance.AddSuspect(_isAlert);
             return;
         }
 
@@ -66,6 +71,7 @@ public class CheckPoint : MonoBehaviour
         {
             _isAlert = true;
             MissionUI.Instance.SendMessage(AlertMessage);
+            MissionUI.Instance.SetCharacter(AlertIcon);
             return;
         }
 
@@ -74,6 +80,8 @@ public class CheckPoint : MonoBehaviour
             _isFail = true;
             gameObject.SetActive(false);
             MissionUI.Instance.SendMessage(FailMessage);
+            MissionUI.Instance.SetCharacter(FailIcon);
+            StatController.Instance.AddFail();
             return;
         }
     }

@@ -1,15 +1,16 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &529224165344090188
+--- !u!1 &5499092363170427442
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4413972206596495633, guid: 454cfd7e97a70a347bd288f527a4c057,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 529224165344090191}
-  - component: {fileID: 529224165344090190}
+  - component: {fileID: 367006915458108558}
+  - component: {fileID: 5499092363170427443}
   m_Layer: 0
   m_Name: CheckPoint7
   m_TagString: Untagged
@@ -17,34 +18,40 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &529224165344090191
+--- !u!4 &367006915458108558
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4413972206596495634, guid: 454cfd7e97a70a347bd288f527a4c057,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529224165344090188}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.23698, y: 1, z: -87.12916}
+  m_GameObject: {fileID: 5499092363170427442}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 59.23698, y: 2.192, z: -87.12916}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 529224166952258161}
+  - {fileID: 5499092363300285612}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &529224165344090190
+--- !u!114 &5499092363170427443
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4413972206596495635, guid: 454cfd7e97a70a347bd288f527a4c057,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529224165344090188}
+  m_GameObject: {fileID: 5499092363170427442}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1de7614b18fa11b42902da4c9e721e04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterIcon: {fileID: 21300000, guid: 466272462e518a24a9308a0ae484fc90, type: 3}
+  AlertIcon: {fileID: 21300000, guid: d43f0b711592d3a44987abe5bf350121, type: 3}
+  FastCompleteIcon: {fileID: 21300000, guid: 428f04e95b02537488277f67f2013b82, type: 3}
+  CompleteIcon: {fileID: 21300000, guid: 428f04e95b02537488277f67f2013b82, type: 3}
+  FailIcon: {fileID: 21300000, guid: 85e0e396c7fb3474790037bf6c19850c, type: 3}
   StartMessage: "I\u2019ve noticed a crazed-looking man making a giant snowman here.
     Looks like he hides something in it."
   FastCompleteMessage: A man is arrested while trying to hide an unconscious victim
@@ -55,17 +62,18 @@ MonoBehaviour:
     and tied victim in a snowman. Need an ambulance.
   FailMessage: Need an ambulance, two victims wounded, one unconscious. The perp is
     at large.
---- !u!1 &529224166952258174
+--- !u!1 &5499092363300285615
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4413972204992023331, guid: 454cfd7e97a70a347bd288f527a4c057,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 529224166952258161}
-  - component: {fileID: 529224166952258165}
-  - component: {fileID: 529224166952258162}
+  - component: {fileID: 5499092363300285612}
+  - component: {fileID: 5499092363300285602}
+  - component: {fileID: 5499092363300285613}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -73,35 +81,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &529224166952258161
+--- !u!4 &5499092363300285612
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4413972204992023340, guid: 454cfd7e97a70a347bd288f527a4c057,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529224166952258174}
+  m_GameObject: {fileID: 5499092363300285615}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 529224165344090191}
+  m_Father: {fileID: 367006915458108558}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &529224166952258165
+--- !u!33 &5499092363300285602
 MeshFilter:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4413972204992023336, guid: 454cfd7e97a70a347bd288f527a4c057,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529224166952258174}
+  m_GameObject: {fileID: 5499092363300285615}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &529224166952258162
+--- !u!23 &5499092363300285613
 MeshRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4413972204992023343, guid: 454cfd7e97a70a347bd288f527a4c057,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529224166952258174}
+  m_GameObject: {fileID: 5499092363300285615}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
